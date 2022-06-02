@@ -19,24 +19,25 @@ mixin _$FirebaseState {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() loading,
-    required TResult Function() error,
-    required TResult Function() userLoaded,
+    required TResult Function(
+            CustomerModel customer, ServicesList? servicesList)
+        userLoaded,
     required TResult Function() noUser,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function()? loading,
-    TResult Function()? error,
-    TResult Function()? userLoaded,
+    TResult Function(CustomerModel customer, ServicesList? servicesList)?
+        userLoaded,
     TResult Function()? noUser,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? loading,
-    TResult Function()? error,
-    TResult Function()? userLoaded,
+    TResult Function(CustomerModel customer, ServicesList? servicesList)?
+        userLoaded,
     TResult Function()? noUser,
     required TResult orElse(),
   }) =>
@@ -44,7 +45,6 @@ mixin _$FirebaseState {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_FirebaseLoadingState value) loading,
-    required TResult Function(_FirebaseErrorState value) error,
     required TResult Function(_FirebaseUserLoadedState value) userLoaded,
     required TResult Function(_FirebaseNoUserState value) noUser,
   }) =>
@@ -52,7 +52,6 @@ mixin _$FirebaseState {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult Function(_FirebaseLoadingState value)? loading,
-    TResult Function(_FirebaseErrorState value)? error,
     TResult Function(_FirebaseUserLoadedState value)? userLoaded,
     TResult Function(_FirebaseNoUserState value)? noUser,
   }) =>
@@ -60,7 +59,6 @@ mixin _$FirebaseState {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_FirebaseLoadingState value)? loading,
-    TResult Function(_FirebaseErrorState value)? error,
     TResult Function(_FirebaseUserLoadedState value)? userLoaded,
     TResult Function(_FirebaseNoUserState value)? noUser,
     required TResult orElse(),
@@ -86,22 +84,22 @@ class _$FirebaseStateCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$FirebaseLoadingStateCopyWith<$Res> {
-  factory _$FirebaseLoadingStateCopyWith(_FirebaseLoadingState value,
-          $Res Function(_FirebaseLoadingState) then) =
-      __$FirebaseLoadingStateCopyWithImpl<$Res>;
+abstract class _$$_FirebaseLoadingStateCopyWith<$Res> {
+  factory _$$_FirebaseLoadingStateCopyWith(_$_FirebaseLoadingState value,
+          $Res Function(_$_FirebaseLoadingState) then) =
+      __$$_FirebaseLoadingStateCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$FirebaseLoadingStateCopyWithImpl<$Res>
+class __$$_FirebaseLoadingStateCopyWithImpl<$Res>
     extends _$FirebaseStateCopyWithImpl<$Res>
-    implements _$FirebaseLoadingStateCopyWith<$Res> {
-  __$FirebaseLoadingStateCopyWithImpl(
-      _FirebaseLoadingState _value, $Res Function(_FirebaseLoadingState) _then)
-      : super(_value, (v) => _then(v as _FirebaseLoadingState));
+    implements _$$_FirebaseLoadingStateCopyWith<$Res> {
+  __$$_FirebaseLoadingStateCopyWithImpl(_$_FirebaseLoadingState _value,
+      $Res Function(_$_FirebaseLoadingState) _then)
+      : super(_value, (v) => _then(v as _$_FirebaseLoadingState));
 
   @override
-  _FirebaseLoadingState get _value => super._value as _FirebaseLoadingState;
+  _$_FirebaseLoadingState get _value => super._value as _$_FirebaseLoadingState;
 }
 
 /// @nodoc
@@ -117,7 +115,7 @@ class _$_FirebaseLoadingState implements _FirebaseLoadingState {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _FirebaseLoadingState);
+        (other.runtimeType == runtimeType && other is _$_FirebaseLoadingState);
   }
 
   @override
@@ -127,8 +125,9 @@ class _$_FirebaseLoadingState implements _FirebaseLoadingState {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() loading,
-    required TResult Function() error,
-    required TResult Function() userLoaded,
+    required TResult Function(
+            CustomerModel customer, ServicesList? servicesList)
+        userLoaded,
     required TResult Function() noUser,
   }) {
     return loading();
@@ -138,8 +137,8 @@ class _$_FirebaseLoadingState implements _FirebaseLoadingState {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function()? loading,
-    TResult Function()? error,
-    TResult Function()? userLoaded,
+    TResult Function(CustomerModel customer, ServicesList? servicesList)?
+        userLoaded,
     TResult Function()? noUser,
   }) {
     return loading?.call();
@@ -149,8 +148,8 @@ class _$_FirebaseLoadingState implements _FirebaseLoadingState {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? loading,
-    TResult Function()? error,
-    TResult Function()? userLoaded,
+    TResult Function(CustomerModel customer, ServicesList? servicesList)?
+        userLoaded,
     TResult Function()? noUser,
     required TResult orElse(),
   }) {
@@ -164,7 +163,6 @@ class _$_FirebaseLoadingState implements _FirebaseLoadingState {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_FirebaseLoadingState value) loading,
-    required TResult Function(_FirebaseErrorState value) error,
     required TResult Function(_FirebaseUserLoadedState value) userLoaded,
     required TResult Function(_FirebaseNoUserState value) noUser,
   }) {
@@ -175,7 +173,6 @@ class _$_FirebaseLoadingState implements _FirebaseLoadingState {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult Function(_FirebaseLoadingState value)? loading,
-    TResult Function(_FirebaseErrorState value)? error,
     TResult Function(_FirebaseUserLoadedState value)? userLoaded,
     TResult Function(_FirebaseNoUserState value)? noUser,
   }) {
@@ -186,7 +183,6 @@ class _$_FirebaseLoadingState implements _FirebaseLoadingState {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_FirebaseLoadingState value)? loading,
-    TResult Function(_FirebaseErrorState value)? error,
     TResult Function(_FirebaseUserLoadedState value)? userLoaded,
     TResult Function(_FirebaseNoUserState value)? noUser,
     required TResult orElse(),
@@ -203,194 +199,136 @@ abstract class _FirebaseLoadingState implements FirebaseState {
 }
 
 /// @nodoc
-abstract class _$FirebaseErrorStateCopyWith<$Res> {
-  factory _$FirebaseErrorStateCopyWith(
-          _FirebaseErrorState value, $Res Function(_FirebaseErrorState) then) =
-      __$FirebaseErrorStateCopyWithImpl<$Res>;
+abstract class _$$_FirebaseUserLoadedStateCopyWith<$Res> {
+  factory _$$_FirebaseUserLoadedStateCopyWith(_$_FirebaseUserLoadedState value,
+          $Res Function(_$_FirebaseUserLoadedState) then) =
+      __$$_FirebaseUserLoadedStateCopyWithImpl<$Res>;
+  $Res call({CustomerModel customer, ServicesList? servicesList});
+
+  $CustomerModelCopyWith<$Res> get customer;
+  $ServicesListCopyWith<$Res>? get servicesList;
 }
 
 /// @nodoc
-class __$FirebaseErrorStateCopyWithImpl<$Res>
+class __$$_FirebaseUserLoadedStateCopyWithImpl<$Res>
     extends _$FirebaseStateCopyWithImpl<$Res>
-    implements _$FirebaseErrorStateCopyWith<$Res> {
-  __$FirebaseErrorStateCopyWithImpl(
-      _FirebaseErrorState _value, $Res Function(_FirebaseErrorState) _then)
-      : super(_value, (v) => _then(v as _FirebaseErrorState));
+    implements _$$_FirebaseUserLoadedStateCopyWith<$Res> {
+  __$$_FirebaseUserLoadedStateCopyWithImpl(_$_FirebaseUserLoadedState _value,
+      $Res Function(_$_FirebaseUserLoadedState) _then)
+      : super(_value, (v) => _then(v as _$_FirebaseUserLoadedState));
 
   @override
-  _FirebaseErrorState get _value => super._value as _FirebaseErrorState;
-}
-
-/// @nodoc
-
-class _$_FirebaseErrorState implements _FirebaseErrorState {
-  const _$_FirebaseErrorState();
+  _$_FirebaseUserLoadedState get _value =>
+      super._value as _$_FirebaseUserLoadedState;
 
   @override
-  String toString() {
-    return 'FirebaseState.error()';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _FirebaseErrorState);
-  }
-
-  @override
-  int get hashCode => runtimeType.hashCode;
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() loading,
-    required TResult Function() error,
-    required TResult Function() userLoaded,
-    required TResult Function() noUser,
+  $Res call({
+    Object? customer = freezed,
+    Object? servicesList = freezed,
   }) {
-    return error();
+    return _then(_$_FirebaseUserLoadedState(
+      customer: customer == freezed
+          ? _value.customer
+          : customer // ignore: cast_nullable_to_non_nullable
+              as CustomerModel,
+      servicesList: servicesList == freezed
+          ? _value.servicesList
+          : servicesList // ignore: cast_nullable_to_non_nullable
+              as ServicesList?,
+    ));
   }
 
   @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? loading,
-    TResult Function()? error,
-    TResult Function()? userLoaded,
-    TResult Function()? noUser,
-  }) {
-    return error?.call();
+  $CustomerModelCopyWith<$Res> get customer {
+    return $CustomerModelCopyWith<$Res>(_value.customer, (value) {
+      return _then(_value.copyWith(customer: value));
+    });
   }
 
   @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? loading,
-    TResult Function()? error,
-    TResult Function()? userLoaded,
-    TResult Function()? noUser,
-    required TResult orElse(),
-  }) {
-    if (error != null) {
-      return error();
+  $ServicesListCopyWith<$Res>? get servicesList {
+    if (_value.servicesList == null) {
+      return null;
     }
-    return orElse();
+
+    return $ServicesListCopyWith<$Res>(_value.servicesList!, (value) {
+      return _then(_value.copyWith(servicesList: value));
+    });
   }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_FirebaseLoadingState value) loading,
-    required TResult Function(_FirebaseErrorState value) error,
-    required TResult Function(_FirebaseUserLoadedState value) userLoaded,
-    required TResult Function(_FirebaseNoUserState value) noUser,
-  }) {
-    return error(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_FirebaseLoadingState value)? loading,
-    TResult Function(_FirebaseErrorState value)? error,
-    TResult Function(_FirebaseUserLoadedState value)? userLoaded,
-    TResult Function(_FirebaseNoUserState value)? noUser,
-  }) {
-    return error?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_FirebaseLoadingState value)? loading,
-    TResult Function(_FirebaseErrorState value)? error,
-    TResult Function(_FirebaseUserLoadedState value)? userLoaded,
-    TResult Function(_FirebaseNoUserState value)? noUser,
-    required TResult orElse(),
-  }) {
-    if (error != null) {
-      return error(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class _FirebaseErrorState implements FirebaseState {
-  const factory _FirebaseErrorState() = _$_FirebaseErrorState;
-}
-
-/// @nodoc
-abstract class _$FirebaseUserLoadedStateCopyWith<$Res> {
-  factory _$FirebaseUserLoadedStateCopyWith(_FirebaseUserLoadedState value,
-          $Res Function(_FirebaseUserLoadedState) then) =
-      __$FirebaseUserLoadedStateCopyWithImpl<$Res>;
-}
-
-/// @nodoc
-class __$FirebaseUserLoadedStateCopyWithImpl<$Res>
-    extends _$FirebaseStateCopyWithImpl<$Res>
-    implements _$FirebaseUserLoadedStateCopyWith<$Res> {
-  __$FirebaseUserLoadedStateCopyWithImpl(_FirebaseUserLoadedState _value,
-      $Res Function(_FirebaseUserLoadedState) _then)
-      : super(_value, (v) => _then(v as _FirebaseUserLoadedState));
-
-  @override
-  _FirebaseUserLoadedState get _value =>
-      super._value as _FirebaseUserLoadedState;
 }
 
 /// @nodoc
 
 class _$_FirebaseUserLoadedState implements _FirebaseUserLoadedState {
-  const _$_FirebaseUserLoadedState();
+  const _$_FirebaseUserLoadedState({required this.customer, this.servicesList});
+
+  @override
+  final CustomerModel customer;
+  @override
+  final ServicesList? servicesList;
 
   @override
   String toString() {
-    return 'FirebaseState.userLoaded()';
+    return 'FirebaseState.userLoaded(customer: $customer, servicesList: $servicesList)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _FirebaseUserLoadedState);
+        (other.runtimeType == runtimeType &&
+            other is _$_FirebaseUserLoadedState &&
+            const DeepCollectionEquality().equals(other.customer, customer) &&
+            const DeepCollectionEquality()
+                .equals(other.servicesList, servicesList));
   }
 
   @override
-  int get hashCode => runtimeType.hashCode;
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(customer),
+      const DeepCollectionEquality().hash(servicesList));
+
+  @JsonKey(ignore: true)
+  @override
+  _$$_FirebaseUserLoadedStateCopyWith<_$_FirebaseUserLoadedState>
+      get copyWith =>
+          __$$_FirebaseUserLoadedStateCopyWithImpl<_$_FirebaseUserLoadedState>(
+              this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() loading,
-    required TResult Function() error,
-    required TResult Function() userLoaded,
+    required TResult Function(
+            CustomerModel customer, ServicesList? servicesList)
+        userLoaded,
     required TResult Function() noUser,
   }) {
-    return userLoaded();
+    return userLoaded(customer, servicesList);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function()? loading,
-    TResult Function()? error,
-    TResult Function()? userLoaded,
+    TResult Function(CustomerModel customer, ServicesList? servicesList)?
+        userLoaded,
     TResult Function()? noUser,
   }) {
-    return userLoaded?.call();
+    return userLoaded?.call(customer, servicesList);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? loading,
-    TResult Function()? error,
-    TResult Function()? userLoaded,
+    TResult Function(CustomerModel customer, ServicesList? servicesList)?
+        userLoaded,
     TResult Function()? noUser,
     required TResult orElse(),
   }) {
     if (userLoaded != null) {
-      return userLoaded();
+      return userLoaded(customer, servicesList);
     }
     return orElse();
   }
@@ -399,7 +337,6 @@ class _$_FirebaseUserLoadedState implements _FirebaseUserLoadedState {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_FirebaseLoadingState value) loading,
-    required TResult Function(_FirebaseErrorState value) error,
     required TResult Function(_FirebaseUserLoadedState value) userLoaded,
     required TResult Function(_FirebaseNoUserState value) noUser,
   }) {
@@ -410,7 +347,6 @@ class _$_FirebaseUserLoadedState implements _FirebaseUserLoadedState {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult Function(_FirebaseLoadingState value)? loading,
-    TResult Function(_FirebaseErrorState value)? error,
     TResult Function(_FirebaseUserLoadedState value)? userLoaded,
     TResult Function(_FirebaseNoUserState value)? noUser,
   }) {
@@ -421,7 +357,6 @@ class _$_FirebaseUserLoadedState implements _FirebaseUserLoadedState {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_FirebaseLoadingState value)? loading,
-    TResult Function(_FirebaseErrorState value)? error,
     TResult Function(_FirebaseUserLoadedState value)? userLoaded,
     TResult Function(_FirebaseNoUserState value)? noUser,
     required TResult orElse(),
@@ -434,26 +369,34 @@ class _$_FirebaseUserLoadedState implements _FirebaseUserLoadedState {
 }
 
 abstract class _FirebaseUserLoadedState implements FirebaseState {
-  const factory _FirebaseUserLoadedState() = _$_FirebaseUserLoadedState;
+  const factory _FirebaseUserLoadedState(
+      {required final CustomerModel customer,
+      final ServicesList? servicesList}) = _$_FirebaseUserLoadedState;
+
+  CustomerModel get customer => throw _privateConstructorUsedError;
+  ServicesList? get servicesList => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  _$$_FirebaseUserLoadedStateCopyWith<_$_FirebaseUserLoadedState>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$FirebaseNoUserStateCopyWith<$Res> {
-  factory _$FirebaseNoUserStateCopyWith(_FirebaseNoUserState value,
-          $Res Function(_FirebaseNoUserState) then) =
-      __$FirebaseNoUserStateCopyWithImpl<$Res>;
+abstract class _$$_FirebaseNoUserStateCopyWith<$Res> {
+  factory _$$_FirebaseNoUserStateCopyWith(_$_FirebaseNoUserState value,
+          $Res Function(_$_FirebaseNoUserState) then) =
+      __$$_FirebaseNoUserStateCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$FirebaseNoUserStateCopyWithImpl<$Res>
+class __$$_FirebaseNoUserStateCopyWithImpl<$Res>
     extends _$FirebaseStateCopyWithImpl<$Res>
-    implements _$FirebaseNoUserStateCopyWith<$Res> {
-  __$FirebaseNoUserStateCopyWithImpl(
-      _FirebaseNoUserState _value, $Res Function(_FirebaseNoUserState) _then)
-      : super(_value, (v) => _then(v as _FirebaseNoUserState));
+    implements _$$_FirebaseNoUserStateCopyWith<$Res> {
+  __$$_FirebaseNoUserStateCopyWithImpl(_$_FirebaseNoUserState _value,
+      $Res Function(_$_FirebaseNoUserState) _then)
+      : super(_value, (v) => _then(v as _$_FirebaseNoUserState));
 
   @override
-  _FirebaseNoUserState get _value => super._value as _FirebaseNoUserState;
+  _$_FirebaseNoUserState get _value => super._value as _$_FirebaseNoUserState;
 }
 
 /// @nodoc
@@ -469,7 +412,7 @@ class _$_FirebaseNoUserState implements _FirebaseNoUserState {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _FirebaseNoUserState);
+        (other.runtimeType == runtimeType && other is _$_FirebaseNoUserState);
   }
 
   @override
@@ -479,8 +422,9 @@ class _$_FirebaseNoUserState implements _FirebaseNoUserState {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() loading,
-    required TResult Function() error,
-    required TResult Function() userLoaded,
+    required TResult Function(
+            CustomerModel customer, ServicesList? servicesList)
+        userLoaded,
     required TResult Function() noUser,
   }) {
     return noUser();
@@ -490,8 +434,8 @@ class _$_FirebaseNoUserState implements _FirebaseNoUserState {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function()? loading,
-    TResult Function()? error,
-    TResult Function()? userLoaded,
+    TResult Function(CustomerModel customer, ServicesList? servicesList)?
+        userLoaded,
     TResult Function()? noUser,
   }) {
     return noUser?.call();
@@ -501,8 +445,8 @@ class _$_FirebaseNoUserState implements _FirebaseNoUserState {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? loading,
-    TResult Function()? error,
-    TResult Function()? userLoaded,
+    TResult Function(CustomerModel customer, ServicesList? servicesList)?
+        userLoaded,
     TResult Function()? noUser,
     required TResult orElse(),
   }) {
@@ -516,7 +460,6 @@ class _$_FirebaseNoUserState implements _FirebaseNoUserState {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_FirebaseLoadingState value) loading,
-    required TResult Function(_FirebaseErrorState value) error,
     required TResult Function(_FirebaseUserLoadedState value) userLoaded,
     required TResult Function(_FirebaseNoUserState value) noUser,
   }) {
@@ -527,7 +470,6 @@ class _$_FirebaseNoUserState implements _FirebaseNoUserState {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult Function(_FirebaseLoadingState value)? loading,
-    TResult Function(_FirebaseErrorState value)? error,
     TResult Function(_FirebaseUserLoadedState value)? userLoaded,
     TResult Function(_FirebaseNoUserState value)? noUser,
   }) {
@@ -538,7 +480,6 @@ class _$_FirebaseNoUserState implements _FirebaseNoUserState {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_FirebaseLoadingState value)? loading,
-    TResult Function(_FirebaseErrorState value)? error,
     TResult Function(_FirebaseUserLoadedState value)? userLoaded,
     TResult Function(_FirebaseNoUserState value)? noUser,
     required TResult orElse(),

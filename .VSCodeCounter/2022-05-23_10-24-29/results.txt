@@ -1,0 +1,166 @@
+Date : 2022-05-23 10:24:29
+Directory : d:\Flutter projects\detailing
+Total : 85 files,  6687 codes, 299 comments, 721 blanks, all 7707 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| Dart       |         56 |      5,889 |        209 |        652 |      6,750 |
+| JSON       |          6 |        235 |          0 |          3 |        238 |
+| YAML       |          3 |        219 |         19 |          9 |        247 |
+| XML        |          9 |        125 |         48 |         11 |        184 |
+| Groovy     |          3 |         93 |          4 |         22 |        119 |
+| HTML       |          1 |         80 |         18 |          7 |        105 |
+| Markdown   |          2 |         13 |          0 |          9 |         22 |
+| Swift      |          1 |         12 |          0 |          2 |         14 |
+| Kotlin     |          1 |         12 |          0 |          3 |         15 |
+| Properties |          2 |          8 |          1 |          2 |         11 |
+| C++        |          1 |          1 |          0 |          1 |          2 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++-------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                  | files      | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                     |         85 |      6,687 |        299 |        721 |      7,707 |
+| android                                                                                               |         14 |        216 |         51 |         36 |        303 |
+| android\app                                                                                           |         10 |        172 |         50 |         25 |        247 |
+| android\app\src                                                                                       |          8 |         76 |         46 |         12 |        134 |
+| android\app\src\debug                                                                                 |          1 |          4 |          4 |          1 |          9 |
+| android\app\src\main                                                                                  |          6 |         68 |         38 |         10 |        116 |
+| android\app\src\main\kotlin                                                                           |          1 |         12 |          0 |          3 |         15 |
+| android\app\src\main\kotlin\com                                                                       |          1 |         12 |          0 |          3 |         15 |
+| android\app\src\main\kotlin\com\example                                                               |          1 |         12 |          0 |          3 |         15 |
+| android\app\src\main\kotlin\com\example\detailing                                                     |          1 |         12 |          0 |          3 |         15 |
+| android\app\src\main\res                                                                              |          4 |         26 |         32 |          6 |         64 |
+| android\app\src\main\res\drawable                                                                     |          1 |          4 |          7 |          2 |         13 |
+| android\app\src\main\res\drawable-v21                                                                 |          1 |          4 |          7 |          2 |         13 |
+| android\app\src\main\res\values                                                                       |          1 |          9 |          9 |          1 |         19 |
+| android\app\src\main\res\values-night                                                                 |          1 |          9 |          9 |          1 |         19 |
+| android\app\src\profile                                                                               |          1 |          4 |          4 |          1 |          9 |
+| android\gradle                                                                                        |          1 |          5 |          1 |          1 |          7 |
+| android\gradle\wrapper                                                                                |          1 |          5 |          1 |          1 |          7 |
+| ios                                                                                                   |          7 |        222 |          2 |          9 |        233 |
+| ios\Runner                                                                                            |          7 |        222 |          2 |          9 |        233 |
+| ios\Runner\Assets.xcassets                                                                            |          3 |        148 |          0 |          4 |        152 |
+| ios\Runner\Assets.xcassets\AppIcon.appiconset                                                         |          1 |        122 |          0 |          1 |        123 |
+| ios\Runner\Assets.xcassets\LaunchImage.imageset                                                       |          2 |         26 |          0 |          3 |         29 |
+| ios\Runner\Base.lproj                                                                                 |          2 |         61 |          2 |          2 |         65 |
+| lib                                                                                                   |         57 |      5,891 |        199 |        645 |      6,735 |
+| lib\features                                                                                          |         32 |      4,184 |        140 |        489 |      4,813 |
+| lib\features\firebase                                                                                 |         20 |      3,755 |        138 |        422 |      4,315 |
+| lib\features\firebase\cubit                                                                           |          3 |        538 |         20 |         77 |        635 |
+| lib\features\firebase\models                                                                          |         14 |      3,083 |        118 |        324 |      3,525 |
+| lib\features\firebase\models\auto_names                                                               |          2 |      1,091 |          0 |         11 |      1,102 |
+| lib\features\firebase\models\customer_model                                                           |          3 |        494 |         25 |         64 |        583 |
+| lib\features\firebase\models\order_model                                                              |          3 |        898 |         40 |        121 |      1,059 |
+| lib\features\firebase\models\services_model                                                           |          3 |        323 |         26 |         64 |        413 |
+| lib\features\firebase\models\time_stamps                                                              |          3 |        277 |         27 |         64 |        368 |
+| lib\features\firebase\service                                                                         |          2 |        112 |          0 |         18 |        130 |
+| lib\features\firebase\view                                                                            |          1 |         22 |          0 |          3 |         25 |
+| lib\features\l10n                                                                                     |          2 |         16 |          0 |          0 |         16 |
+| lib\features\sqlite                                                                                   |          9 |        410 |          2 |         66 |        478 |
+| lib\features\sqlite\models                                                                            |          6 |        326 |          0 |         45 |        371 |
+| lib\features\sqlite\operations                                                                        |          2 |         48 |          0 |         10 |         58 |
+| lib\features\yandex_map                                                                               |          1 |          3 |          0 |          1 |          4 |
+| lib\logic                                                                                             |          2 |         46 |         31 |         27 |        104 |
+| lib\presentation                                                                                      |         21 |      1,590 |         28 |        119 |      1,737 |
+| lib\presentation\design                                                                               |          2 |         39 |         20 |          6 |         65 |
+| lib\presentation\screens                                                                              |          9 |      1,107 |          1 |         74 |      1,182 |
+| lib\presentation\widgets                                                                              |         10 |        444 |          7 |         39 |        490 |
+| test                                                                                                  |          1 |         14 |         10 |          7 |         31 |
+| web                                                                                                   |          2 |        115 |         18 |          8 |        141 |
++-------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                              | language   | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| d:\Flutter projects\detailing\README.md                                                               | Markdown   |         10 |          0 |          7 |         17 |
+| d:\Flutter projects\detailing\analysis_options.yaml                                                   | YAML       |        176 |          1 |          1 |        178 |
+| d:\Flutter projects\detailing\android\app\build.gradle                                                | Groovy     |         57 |          4 |         13 |         74 |
+| d:\Flutter projects\detailing\android\app\google-services.json                                        | JSON       |         39 |          0 |          0 |         39 |
+| d:\Flutter projects\detailing\android\app\src\debug\AndroidManifest.xml                               | XML        |          4 |          4 |          1 |          9 |
+| d:\Flutter projects\detailing\android\app\src\main\AndroidManifest.xml                                | XML        |         30 |          6 |          1 |         37 |
+| d:\Flutter projects\detailing\android\app\src\main\kotlin\com\example\detailing\MainActivity.kt       | Kotlin     |         12 |          0 |          3 |         15 |
+| d:\Flutter projects\detailing\android\app\src\main\res\drawable-v21\launch_background.xml             | XML        |          4 |          7 |          2 |         13 |
+| d:\Flutter projects\detailing\android\app\src\main\res\drawable\launch_background.xml                 | XML        |          4 |          7 |          2 |         13 |
+| d:\Flutter projects\detailing\android\app\src\main\res\values-night\styles.xml                        | XML        |          9 |          9 |          1 |         19 |
+| d:\Flutter projects\detailing\android\app\src\main\res\values\styles.xml                              | XML        |          9 |          9 |          1 |         19 |
+| d:\Flutter projects\detailing\android\app\src\profile\AndroidManifest.xml                             | XML        |          4 |          4 |          1 |          9 |
+| d:\Flutter projects\detailing\android\build.gradle                                                    | Groovy     |         28 |          0 |          5 |         33 |
+| d:\Flutter projects\detailing\android\gradle.properties                                               | Properties |          3 |          0 |          1 |          4 |
+| d:\Flutter projects\detailing\android\gradle\wrapper\gradle-wrapper.properties                        | Properties |          5 |          1 |          1 |          7 |
+| d:\Flutter projects\detailing\android\settings.gradle                                                 | Groovy     |          8 |          0 |          4 |         12 |
+| d:\Flutter projects\detailing\ios\Runner\AppDelegate.swift                                            | Swift      |         12 |          0 |          2 |         14 |
+| d:\Flutter projects\detailing\ios\Runner\Assets.xcassets\AppIcon.appiconset\Contents.json             | JSON       |        122 |          0 |          1 |        123 |
+| d:\Flutter projects\detailing\ios\Runner\Assets.xcassets\LaunchImage.imageset\Contents.json           | JSON       |         23 |          0 |          1 |         24 |
+| d:\Flutter projects\detailing\ios\Runner\Assets.xcassets\LaunchImage.imageset\README.md               | Markdown   |          3 |          0 |          2 |          5 |
+| d:\Flutter projects\detailing\ios\Runner\Base.lproj\LaunchScreen.storyboard                           | XML        |         36 |          1 |          1 |         38 |
+| d:\Flutter projects\detailing\ios\Runner\Base.lproj\Main.storyboard                                   | XML        |         25 |          1 |          1 |         27 |
+| d:\Flutter projects\detailing\ios\Runner\Runner-Bridging-Header.h                                     | C++        |          1 |          0 |          1 |          2 |
+| d:\Flutter projects\detailing\l10n.yaml                                                               | YAML       |          3 |          0 |          0 |          3 |
+| d:\Flutter projects\detailing\lib\factory.dart                                                        | Dart       |         26 |          0 |          6 |         32 |
+| d:\Flutter projects\detailing\lib\features\firebase\cubit\firebase_cubit.dart                         | Dart       |        115 |          0 |         13 |        128 |
+| d:\Flutter projects\detailing\lib\features\firebase\cubit\firebase_cubit.freezed.dart                 | Dart       |        415 |         20 |         62 |        497 |
+| d:\Flutter projects\detailing\lib\features\firebase\cubit\firebase_state.dart                         | Dart       |          8 |          0 |          2 |         10 |
+| d:\Flutter projects\detailing\lib\features\firebase\models\auto_names\auto_names.dart                 | Dart       |         23 |          0 |         10 |         33 |
+| d:\Flutter projects\detailing\lib\features\firebase\models\auto_names\json_data.dart                  | Dart       |      1,068 |          0 |          1 |      1,069 |
+| d:\Flutter projects\detailing\lib\features\firebase\models\customer_model\customer_model.dart         | Dart       |         31 |          0 |          6 |         37 |
+| d:\Flutter projects\detailing\lib\features\firebase\models\customer_model\customer_model.freezed.dart | Dart       |        423 |         21 |         51 |        495 |
+| d:\Flutter projects\detailing\lib\features\firebase\models\customer_model\customer_model.g.dart       | Dart       |         40 |          4 |          7 |         51 |
+| d:\Flutter projects\detailing\lib\features\firebase\models\order_model\order_model.dart               | Dart       |         55 |          0 |          8 |         63 |
+| d:\Flutter projects\detailing\lib\features\firebase\models\order_model\order_model.freezed.dart       | Dart       |        778 |         36 |        102 |        916 |
+| d:\Flutter projects\detailing\lib\features\firebase\models\order_model\order_model.g.dart             | Dart       |         65 |          4 |         11 |         80 |
+| d:\Flutter projects\detailing\lib\features\firebase\models\services_model\services_model.dart         | Dart       |         24 |          0 |          6 |         30 |
+| d:\Flutter projects\detailing\lib\features\firebase\models\services_model\services_model.freezed.dart | Dart       |        274 |         22 |         51 |        347 |
+| d:\Flutter projects\detailing\lib\features\firebase\models\services_model\services_model.g.dart       | Dart       |         25 |          4 |          7 |         36 |
+| d:\Flutter projects\detailing\lib\features\firebase\models\time_stamps\time_stamps.dart               | Dart       |         22 |          0 |          6 |         28 |
+| d:\Flutter projects\detailing\lib\features\firebase\models\time_stamps\time_stamps.freezed.dart       | Dart       |        234 |         23 |         51 |        308 |
+| d:\Flutter projects\detailing\lib\features\firebase\models\time_stamps\time_stamps.g.dart             | Dart       |         21 |          4 |          7 |         32 |
+| d:\Flutter projects\detailing\lib\features\firebase\service\authentication_service.dart               | Dart       |         32 |          0 |          7 |         39 |
+| d:\Flutter projects\detailing\lib\features\firebase\service\firestore_service.dart                    | Dart       |         80 |          0 |         11 |         91 |
+| d:\Flutter projects\detailing\lib\features\firebase\view\check_page.dart                              | Dart       |         22 |          0 |          3 |         25 |
+| d:\Flutter projects\detailing\lib\features\l10n\app_en.arb                                            | JSON       |         12 |          0 |          0 |         12 |
+| d:\Flutter projects\detailing\lib\features\l10n\app_ru.arb                                            | JSON       |          4 |          0 |          0 |          4 |
+| d:\Flutter projects\detailing\lib\features\sqlite\models\body_ratio.dart                              | Dart       |         40 |          0 |          8 |         48 |
+| d:\Flutter projects\detailing\lib\features\sqlite\models\car.dart                                     | Dart       |         56 |          0 |          7 |         63 |
+| d:\Flutter projects\detailing\lib\features\sqlite\models\customer.dart                                | Dart       |         79 |          0 |          8 |         87 |
+| d:\Flutter projects\detailing\lib\features\sqlite\models\order.dart                                   | Dart       |         72 |          0 |          8 |         80 |
+| d:\Flutter projects\detailing\lib\features\sqlite\models\service.dart                                 | Dart       |         47 |          0 |          7 |         54 |
+| d:\Flutter projects\detailing\lib\features\sqlite\models\service_order.dart                           | Dart       |         32 |          0 |          7 |         39 |
+| d:\Flutter projects\detailing\lib\features\sqlite\operations\car_operations.dart                      | Dart       |         24 |          0 |          5 |         29 |
+| d:\Flutter projects\detailing\lib\features\sqlite\operations\customer_operations.dart                 | Dart       |         24 |          0 |          5 |         29 |
+| d:\Flutter projects\detailing\lib\features\sqlite\poless_database.dart                                | Dart       |         36 |          2 |         11 |         49 |
+| d:\Flutter projects\detailing\lib\features\yandex_map\key.dart                                        | Dart       |          3 |          0 |          1 |          4 |
+| d:\Flutter projects\detailing\lib\logic\time.dart                                                     | Dart       |          4 |         17 |          9 |         30 |
+| d:\Flutter projects\detailing\lib\logic\timestamps.dart                                               | Dart       |         42 |         14 |         18 |         74 |
+| d:\Flutter projects\detailing\lib\main.dart                                                           | Dart       |         45 |          0 |          4 |         49 |
+| d:\Flutter projects\detailing\lib\presentation\design\social_icons_icons.dart                         | Dart       |          8 |         19 |          4 |         31 |
+| d:\Flutter projects\detailing\lib\presentation\design\theme.dart                                      | Dart       |         31 |          1 |          2 |         34 |
+| d:\Flutter projects\detailing\lib\presentation\screens\about.dart                                     | Dart       |        122 |          0 |          7 |        129 |
+| d:\Flutter projects\detailing\lib\presentation\screens\add_auto.dart                                  | Dart       |        148 |          0 |          8 |        156 |
+| d:\Flutter projects\detailing\lib\presentation\screens\home_page.dart                                 | Dart       |         31 |          0 |          3 |         34 |
+| d:\Flutter projects\detailing\lib\presentation\screens\order.dart                                     | Dart       |        195 |          0 |          8 |        203 |
+| d:\Flutter projects\detailing\lib\presentation\screens\profile.dart                                   | Dart       |        167 |          1 |          6 |        174 |
+| d:\Flutter projects\detailing\lib\presentation\screens\settings.dart                                  | Dart       |         10 |          0 |          3 |         13 |
+| d:\Flutter projects\detailing\lib\presentation\screens\sing_in.dart                                   | Dart       |         89 |          0 |          6 |         95 |
+| d:\Flutter projects\detailing\lib\presentation\screens\sing_up.dart                                   | Dart       |        291 |          0 |         30 |        321 |
+| d:\Flutter projects\detailing\lib\presentation\screens\welcome_page.dart                              | Dart       |         54 |          0 |          3 |         57 |
+| d:\Flutter projects\detailing\lib\presentation\widgets\appbar_title_with_icon.dart                    | Dart       |         28 |          0 |          4 |         32 |
+| d:\Flutter projects\detailing\lib\presentation\widgets\button_with_text.dart                          | Dart       |         49 |          0 |          4 |         53 |
+| d:\Flutter projects\detailing\lib\presentation\widgets\drawer_main.dart                               | Dart       |         93 |          7 |          3 |        103 |
+| d:\Flutter projects\detailing\lib\presentation\widgets\drawer_point.dart                              | Dart       |         30 |          0 |          4 |         34 |
+| d:\Flutter projects\detailing\lib\presentation\widgets\error_display.dart                             | Dart       |         25 |          0 |          4 |         29 |
+| d:\Flutter projects\detailing\lib\presentation\widgets\info_card.dart                                 | Dart       |         61 |          0 |          4 |         65 |
+| d:\Flutter projects\detailing\lib\presentation\widgets\loading_widget.dart                            | Dart       |         14 |          0 |          3 |         17 |
+| d:\Flutter projects\detailing\lib\presentation\widgets\text_button.dart                               | Dart       |         25 |          0 |          5 |         30 |
+| d:\Flutter projects\detailing\lib\presentation\widgets\textformfield_default.dart                     | Dart       |         77 |          0 |          4 |         81 |
+| d:\Flutter projects\detailing\lib\presentation\widgets\user_information_column_widget.dart            | Dart       |         42 |          0 |          4 |         46 |
+| d:\Flutter projects\detailing\pubspec.yaml                                                            | YAML       |         40 |         18 |          8 |         66 |
+| d:\Flutter projects\detailing\test\widget_test.dart                                                   | Dart       |         14 |         10 |          7 |         31 |
+| d:\Flutter projects\detailing\web\index.html                                                          | HTML       |         80 |         18 |          7 |        105 |
+| d:\Flutter projects\detailing\web\manifest.json                                                       | JSON       |         35 |          0 |          1 |         36 |
+| Total                                                                                                 |            |      6,687 |        299 |        721 |      7,707 |
++-------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+

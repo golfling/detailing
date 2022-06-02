@@ -1,0 +1,12 @@
+{
+    "language": "English",
+    "@language":{
+        "description": "The current lang"
+    },
+    "heroCount": "{count,plural, =0{No heroes yet} =1{1 hero} other{{count} heroes}}",
+    "@heroCount": {
+        "placeholders": {
+            "count": {}
+        }
+    }
+}

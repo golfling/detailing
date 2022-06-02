@@ -1,0 +1,4 @@
+{
+    "language": "русский",
+    "heroCount": "{count,plural, =0{Нет героев} =1{1 герой} other{{count} героев}}"
+}
